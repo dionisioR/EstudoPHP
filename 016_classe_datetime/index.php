@@ -169,12 +169,7 @@
          ?>
         <br>
         <br>
-    <h2 class="display-6">**--**</h2>
-        <?php
-           
-        ?>
-        <br>
-        <br>
+
 
     </main>
     <footer class="text-center fixed-bottom">

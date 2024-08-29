@@ -10,35 +10,13 @@
 </head>
 
 <body>
-    <header class="text-center p-5">
-        <h1 class="display-3">Gestão de Diretórios</h1>
-    </header>
-
-    <main class="container">
-        <h2 class="display-6">Verifica, cria e abre o diretório</h2>
+    <main class="container mt-5">
+        <a href="./index.php">VOLTAR</a>
         <?php
 
-        $folder = __DIR__ . '/uploads';
-        echo $folder;
+            16min
 
-        echo '<pre>';
-        var_dump(pathinfo($folder));
-        echo '</pre>';
-
-
-        if (!file_exists($folder) || !is_dir($folder)) {
-            // se não existe ou não é um diretório
-            mkdir($folder, '0755'); // cria o diretório
-            echo '<br> Diretório criado com sucesso!';
-        } else {
-            echo '<pre>';
-            var_dump(scandir($folder));
-            echo '</pre>';
-        }
         ?>
-        <br><br>
-       
-
     </main>
     <footer class="text-center fixed-bottom">
         <p>RD3W</p>

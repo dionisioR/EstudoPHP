@@ -9,13 +9,13 @@
 </head>
 <body>
     <header class="text-center p-5">
-        <h1 class="display-3">x</h1>
+        <h1 class="display-3">Formulários e Filtros</h1>
     </header>
     
     <main class="container">
-    <h2 class="display-6">**--**</h2>
+    <h2 class="display-6">Request</h2>
         <?php
-           
+           include __DIR__.'/form.php';
         ?>
 
     </main>
