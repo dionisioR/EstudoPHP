@@ -14,7 +14,7 @@
     </header>
     
     <main class="container">
-    <h2 class="display-6">Request</h2>
+    <h2 class="display-6">Get</h2>
       
       <form name="post" action="./form.php" method="get" enctype="multipart/form-data">
         <p><a href="./" title="Atualizar">Atualizar</a></p>

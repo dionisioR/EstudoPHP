@@ -13,10 +13,44 @@
     <main class="container mt-5">
         <a href="./index.php">VOLTAR</a>
         <?php
+            echo '<pre>';
+            var_dump($_GET);
+            echo '</pre>';
 
-            16min
+            $email = filter_input(INPUT_GET, 'email', FILTER_VALIDATE_EMAIL);
+            $nome = filter_input(INPUT_GET, 'name', FILTER_DEFAULT);
+            echo $email . '<br>';
+            echo $nome . '<hr>';
+
+            $get = filter_input_array(INPUT_GET, FILTER_DEFAULT);
+            echo '<pre>';
+            var_dump($get);
+            echo '</pre>';
+            echo $get['name'] . '<br>';
+            echo $get['email'] . '<br>';
+
+            echo '<br><h2>Filter_list()</h2>';
+            echo '<pre>';
+            var_dump(filter_list());
+            echo '</pre>';
+
+            echo '<br><h2>Validando filter_input_array</h2>';
+
+            // primeiro devemos ordenar o tipo de filtro com cada campo do formulário
+            $filtro = [
+                'name' => FILTER_DEFAULT,
+                'email' => FILTER_VALIDATE_EMAIL
+            ];
+            $getForm = filter_input_array(INPUT_GET, $filtro);
+
+            echo '<pre>';
+            var_dump($getForm);
+            echo '</pre>';
+
+
 
         ?>
+
     </main>
     <footer class="text-center fixed-bottom">
         <p>RD3W</p>
