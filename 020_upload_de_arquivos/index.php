@@ -9,14 +9,24 @@
 </head>
 <body>
     <header class="text-center p-5">
-        <h1 class="display-3">x</h1>
+        <h1 class="display-3">Upload de Arquivos</h1>
     </header>
     
     <main class="container">
-    <h2 class="display-6">**--**</h2>
-        <?php
-           
-        ?>
+    <!-- <form action="./?post=true" method="post" enctype="multipart/form-data"> -->
+    <form action="./Upload_01.php" method="post" enctype="multipart/form-data">
+            <p>
+                <a href="./" title="Atualizar">Atualizar</a>
+            </p>
+            <div class="mb-3">
+                <label for="file" class="form-label">Arquivo</label>
+                <input type="file" class="form-control" name="file">
+            </div>
+            <button class="btn btn-primary">Enviar Agora!</button>
+            
+        </form>
+
+  
 
     </main>
     <footer class="text-center fixed-bottom">
